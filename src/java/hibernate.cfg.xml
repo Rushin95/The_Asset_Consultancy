@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/the_asset_consultancy?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <mapping class="model.Login"/>
+        <mapping class="model.AgentDetail"/>
+        <mapping class="model.CustomerDetail"/>
+        <mapping class="model.StateMaster"/>
+        <mapping class="model.CityMaster"/>
+        <mapping class="model.PropDetail"/>
+        <mapping class="model.PropFeedback"/>
+        <mapping class="model.AgentFeedback"/>
+        <mapping class="model.ZipMaster"/>
+        <mapping class="model.AreaMaster"/>
+        <mapping class="model.Filtercriteria" />
+        <mapping class="model.AssetRecords" />
+        <mapping class="model.GmemberDetail" />
+        <mapping class="model.GroupDetail" />
+        <mapping class="model.ChatMsg"/>
+        <mapping class="model.AssetData"/>
+    </session-factory>
+</hibernate-configuration>

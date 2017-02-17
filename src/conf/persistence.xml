@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="The_Asset_ConsultancyPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>model.Login</class>
+    <class>model.BrokerDetail</class>
+    <class>model.CustomerDetail</class>
+    <class>model.AgentDetail</class>
+    <class>model.CityMaster</class>
+    <class>model.StateMaster</class>
+    <class>model.PropDetail</class>
+    <class>model.FilterCriteria</class>
+    <class>model.ZipMaster</class>
+    <class>model.AreaMaster</class>
+    <class>model.Agentfeedback</class>
+    <class>model.Propfeedback</class>
+    <class>model.AgentFeedback</class>
+    <class>model.PropFeedback</class>
+    <class>model.Filtercriteria</class>
+    <class>model.AssetRecords</class>
+    <class>model.GroupDetail</class>
+    <class>model.GmemberDetail</class>
+    <class>model.ChatMsg</class>
+    <class>model.AssetData</class>
+    <class>model.AssetRecords3</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=the_asset_consultancy"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="icreate"/>
+    </properties>
+  </persistence-unit>
+</persistence>
